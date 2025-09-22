@@ -1,6 +1,6 @@
 ---
-title: Treinamento
-description: Treinamentos que tive oportunidade de ministrar
+title: Carreira
+description: Todas as minhas passagens durante minha carreira
 image:
 
 # Badge style

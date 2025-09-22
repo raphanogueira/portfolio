@@ -1,6 +1,6 @@
 ---
-title: Example Category
-description: A description of this category
+title: Treinamento
+description: Treinamentos que tive oportunidade de ministrar
 image:
 
 # Badge style

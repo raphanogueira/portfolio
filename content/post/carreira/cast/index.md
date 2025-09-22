@@ -1,14 +1,14 @@
 ---
 title: "Cast: Onde Minha Carreira em Tecnologia Começou"
 description: "A jornada que moldou minha carreira em tecnologia. Na Cast, meu primeiro emprego, fui de um iniciante em .NET a um profissional com autonomia para desenvolver soluções de ponta a ponta. Uma história sobre crescimento, desafios e a importância da primeira oportunidade."
-slug: carreira-cast
+slug: cast
 date: 2025-09-19 18:00:00+0000
-image: cast.jpg
+image: capa.jpg
 categories:
     - Carreira
 tags:
     - carreira
-weight: 1       # You can add weight to some posts to override the default sorting (date descending)
+weight: 6
 ---
 
 Para muitos, o primeiro emprego é um marco inesquecível. Para mim, a Cast foi isso e muito mais: foi a porta de entrada para o universo da tecnologia e a base fundamental de toda a minha carreira.
