@@ -1,10 +1,10 @@
 ---
-title: Carreira
-description: Todas as minhas passagens durante minha carreira
+title: Treinamento
+description: Treinamentos que tive oportunidade de ministrar
 image:
 
 # Badge style
 style:
-    background: "#2a9d8f"
+    background: "#1d2e92ff"
     color: "#fff"
 ---
