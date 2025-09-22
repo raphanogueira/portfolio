@@ -1,5 +1,5 @@
 # Change baseurl before deploy
-baseurl = "https://raphanogueira.github.io/portifolio/"
+baseurl = "https://raphanogueira.github.io/portfolio/"
 languageCode = "pt-br"
 title = "Raphael Nogueira"
 
