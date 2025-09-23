@@ -15,13 +15,13 @@ weight: 1
 
 Bem-vindo ao meu diário de bordo, um espaço onde documento os projetos, desafios e aprendizados mais marcantes da minha carreira como Especialista em Engenharia de Software e as vezes um Engenheiro de Plataforma.
 
-## Diário de Bordo: Engenharia de Plataforma - Desvendando Limites do Azure (Setembro/2025)
+## Diário de Bordo de um Engenharo de Plataforma
 
 ### Como a importação de 45 mil catálogos para o Backstage revelou um limite não documentado.
 
 #### O Desafio: Mapeando o Legado com um IDP
 
-Após a intensidade do projeto HomeCare, nosso foco retornou para a construção da nossa Plataforma de Desenvolvedor Interno (IDP). A missão era clara, mas monumental: importar e mapear os catálogos de todo o nosso sistema legado para o Backstage. O objetivo era finalmente trazer visibilidade sobre as dependências de cada componente dentro do Oracle, algo que até então não estava documentado. O principal obstáculo era o volume: aproximadamente 45 mil catálogos registrados em um repositório Git, com todos os seus relacionamentos.
+Após a intensidade do projeto anterior, nosso foco retornou para a construção da nossa Plataforma de Desenvolvedor Interno (IDP). A missão era clara, mas monumental: importar e mapear os catálogos de todo o nosso sistema legado para o Backstage. O objetivo era finalmente trazer visibilidade sobre as dependências de cada componente dentro do Oracle, algo que até então não estava documentado. O principal obstáculo era o volume: aproximadamente 45 mil catálogos registrados em um repositório Git, com todos os seus relacionamentos.
 
 #### A Investigação: O Mistério dos Erros 400
 
@@ -48,7 +48,7 @@ Essa experiência reforçou uma lição fundamental: às vezes, para resolver um
 
 ## Diário de Bordo de um Tech Lead
 
-### Como superamos a incerteza e entregamos o projeto HomeCare.
+### Como superamos a incerteza e entregamos o projeto crítico.
 
 Minha jornada no Hapvida começou com um batismo de fogo: o projeto HomeCare. Em julho de 2025, nosso time de Engenharia recebeu a missão de entregar, em 45 dias, uma aplicação complexa que estava em espera há mais de seis meses. Este post é um diário de bordo dessa experiência, detalhando os desafios, as soluções e, mais importante, os aprendizados que tirei ao assumir uma liderança técnica em um cenário de alta pressão.
 
@@ -77,4 +77,15 @@ Essa experiência foi uma aceleração de carreira compactada em 45 dias. Saí d
 * **O Tech Lead é um Facilitador:** Meu papel mais importante não foi escrever o código mais brilhante, mas sim garantir que cada desenvolvedor tivesse o que precisava para fazer o seu melhor. Resolver um problema de acesso, por exemplo, era tão prioritário quanto corrigir um bug crítico.
 * **A Liderança Inspira pelo Exemplo:** Em momentos de crise, a equipe olha para o líder. Transmitir calma e confiança de que o objetivo é alcançável é fundamental para manter a moral e o desempenho do time elevados.
 
-O projeto HomeCare foi muito mais do que uma entrega no Hapvida. Foi a prova de que com um time com habilidades, experiência, maturidade, comunicação e muita resiliência, até os prazos mais impossíveis podem ser cumpridos.
+### Agradecimentos e Trabalho em Equipe
+
+Tive de trabalhar ao lado de pessoas que são referencia e nos apoiaram nessa entrega.
+
+* **[Matheus Ulisses](https://www.linkedin.com/in/matheus-ulisses) (Gerente do time de Engenharia de Software)**
+* **[Guilherme Ferreira]() (Especialista em Engenharia de Software para React Mobile)**
+* **[Leonardo Oliveira]() (Especialista em Engenharia de Software para .NET)**
+* **[Daniel Alvez Paezani]() (Especialista em Engenharia de Software para Java)**
+* **[Ricardo Tanaka](https://www.linkedin.com/in/ricardo-takahiro-tanaka) (Especialista em Engenharia de Software para Java)**
+* **[Thalya Oliveira](https://www.linkedin.com/in/thalyaoliveira25) (Desenvolvedora .NET)**
+
+O projeto foi muito mais do que uma entrega no Hapvida. Foi a prova de que com um time com habilidades, experiência, maturidade, comunicação e muita resiliência, até os prazos mais impossíveis podem ser cumpridos.
