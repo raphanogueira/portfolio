@@ -6,7 +6,7 @@ image: capa.jpeg
 slug: palestra-kcd-araraquara
 weight: 2
 categories:
-    - Treinamento
+    - Palestra
 tags:
     - Cloud Native
     - Backstage.io

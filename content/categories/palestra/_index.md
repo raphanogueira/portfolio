@@ -1,6 +1,6 @@
 ---
-title: Treinamento
-description: Treinamentos que tive oportunidade de ministrar
+title: Palestra
+description: Palestras que tive oportunidade de ministrar
 image:
 
 # Badge style
