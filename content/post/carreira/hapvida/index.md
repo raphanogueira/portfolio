@@ -2,7 +2,7 @@
 title: "Em constante evolução: minha jornada atual no Hapvida"
 description: "Especialista em Engenharia de Software no Hapvida, responsável por projetar e implementar soluções de alta performance com .NET e Engenharia de Plataforma. Meu foco é resolver desafios complexos, otimizando a tecnologia para impulsionar o impacto positivo que geramos juntos."
 slug: hapvida
-date: 2025-07-01 09:00:00+0000
+date: 2025-09-23 20:00:00+0000
 image: capa.png
 categories:
     - Carreira
@@ -45,6 +45,8 @@ Essa descoberta não apenas resolveu nosso problema interno, mas também revelou
 2.  **Documentar a limitação:** Tornar pública a informação sobre o limite do `skip` e `take` para que outros usuários da ferramenta não percam tempo investigando o mesmo problema.
 
 Essa experiência reforçou uma lição fundamental: às vezes, para resolver um problema complexo, é preciso ir além da documentação e mergulhar no código-fonte.
+
+---
 
 ## Diário de Bordo de um Tech Lead
 

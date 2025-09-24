@@ -1,5 +1,5 @@
 ---
-title: Certificações
+title: Certificação
 description: Minhas certificações
 image:
 

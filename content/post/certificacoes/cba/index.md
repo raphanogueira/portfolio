@@ -6,7 +6,7 @@ image: capa.png
 slug: cba
 weight: 3
 categories:
-    - Certificações
+    - Certificação
 tags:
     - Cloud Native
     - Backstage.io
