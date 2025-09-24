@@ -23,7 +23,7 @@ Abordei como essa estratégia resolve desafios críticos, permitindo:
 * **Fortalecer a Governança:** Incorporar as melhores práticas de segurança, qualidade e conformidade desde a primeira linha de código, de forma padronizada para toda a organização.
 * **Potencializar a Inovação:** Melhorar drasticamente a Developer Experience (DevX), abstraindo complexidades e permitindo que os desenvolvedores foquem na lógica de negócio e na criação de soluções de impacto.
 
-Agradeço a todos que participaram e contribuíram com perguntas excelentes. A energia da comunidade de Araraquara é contagiante! Parabenizo também os organizadores por um evento de altíssimo nível.
+Agradeço a todos que participaram e contribuíram com perguntas excelentes. Quero deixar um agradecimento muito especial à minha noiva, [Gabrielle Limoni](), por ser meu grande apoio de sempre. A energia da comunidade de Araraquara é contagiante! Parabenizo também os organizadores por um evento de altíssimo nível.
 
 E na sua empresa, como vocês lidam com a padronização e o onboarding de novos projetos? Vamos conversar nos comentários!
 
