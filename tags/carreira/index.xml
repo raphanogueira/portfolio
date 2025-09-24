@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Carreira on Raphael Nogueira</title><link>https://raphanogueira.dev/tags/carreira/</link><description>Recent content in Carreira on Raphael Nogueira</description><generator>Hugo -- gohugo.io</generator><language>pt-br</language><lastBuildDate>Tue, 23 Sep 2025 20:00:00 +0000</lastBuildDate><atom:link href="https://raphanogueira.dev/tags/carreira/index.xml" rel="self" type="application/rss+xml"/><item><title>Em constante evolução: minha jornada atual no Hapvida</title><link>https://raphanogueira.dev/p/hapvida/</link><pubDate>Tue, 23 Sep 2025 20:00:00 +0000</pubDate><guid>https://raphanogueira.dev/p/hapvida/</guid><description>&lt;img src="https://raphanogueira.dev/p/hapvida/capa.png" alt="Featured image of post Em constante evolução: minha jornada atual no Hapvida" /&gt;&lt;h1 id="meu-diário-de-bordo-profissional"&gt;Meu Diário de Bordo Profissional
+&lt;/h1&gt;&lt;p&gt;Bem-vindo ao meu diário de bordo, um espaço onde documento os projetos, desafios e aprendizados mais marcantes da minha carreira como Especialista em Engenharia de Software e as vezes um Engenheiro de Plataforma.&lt;/p&gt;
+&lt;h2 id="diário-de-bordo-de-um-engenheiro-de-plataforma"&gt;Diário de Bordo de um Engenheiro de Plataforma
+&lt;/h2&gt;&lt;h3 id="como-a-importação-de-45-mil-catálogos-para-o-backstage-revelou-um-limite-não-documentado"&gt;Como a importação de 45 mil catálogos para o Backstage revelou um limite não documentado.
+&lt;/h3&gt;&lt;h4 id="o-desafio-mapeando-o-legado-com-um-idp"&gt;O Desafio: Mapeando o Legado com um IDP
+&lt;/h4&gt;&lt;p&gt;Após a intensidade do projeto anterior, nosso foco retornou para a construção da nossa Plataforma de Desenvolvedor Interno (IDP). A missão era clara, mas monumental: importar e mapear os catálogos de todo o nosso sistema legado para o Backstage. O objetivo era finalmente trazer visibilidade sobre as dependências de cada componente dentro do Oracle, algo que até então não estava documentado. O principal obstáculo era o volume: aproximadamente 45 mil catálogos registrados em um repositório Git, com todos os seus relacionamentos.&lt;/p&gt;
+&lt;h4 id="a-investigação-o-mistério-dos-erros-400"&gt;A Investigação: O Mistério dos Erros 400
+&lt;/h4&gt;&lt;p&gt;O processo de importação para o Backstage começou a falhar de forma consistente, retornando erros &lt;code&gt;400 Bad Request&lt;/code&gt; sem uma causa clara. Após dias investigando logs e configurações, a frustração começou a crescer. As tentativas convencionais não funcionavam, e a documentação oficial não oferecia pistas.&lt;/p&gt;
+&lt;p&gt;Foi nesse ponto que decidi adotar uma abordagem mais drástica: em vez de apenas usar o plugin de &lt;em&gt;discovery&lt;/em&gt; do Azure, eu iria reescrevê-lo. Meu objetivo era entender, linha por linha, como ele se comunicava com a API e por que nossas requisições estavam sendo rejeitadas.&lt;/p&gt;
+&lt;h4 id="a-descoberta-o-limite-oculto-da-api"&gt;A Descoberta: O Limite Oculto da API
+&lt;/h4&gt;&lt;p&gt;Ao mergulhar no código e recriar as chamadas, a causa do problema finalmente apareceu. O &lt;em&gt;code search&lt;/em&gt; do Azure possui um limite rígido e não documentado: &lt;strong&gt;a API não permite uma combinação de &lt;code&gt;skip&lt;/code&gt; e &lt;code&gt;take&lt;/code&gt; superior a 2.000 registros&lt;/strong&gt;. Em outras palavras, era impossível paginar além do registro de número 2.000, o que tornava inviável a descoberta dos nossos 45 mil catálogos através de uma única consulta paginada.&lt;/p&gt;
+&lt;h4 id="a-solução-aplicada"&gt;A Solução Aplicada
+&lt;/h4&gt;&lt;p&gt;Com a causa raiz identificada, a solução foi estratégica: segmentamos os 45 mil arquivos em múltiplas pastas. Agrupamos os catálogos por tipo e garantimos que cada pasta contivesse no máximo 2.000 itens, respeitando o limite da API. A nova abordagem funcionou. Notavelmente, enquanto a incorporação final das &lt;code&gt;Entities&lt;/code&gt; no Backstage foi um processo gradual, a criação das &lt;code&gt;Locations&lt;/code&gt; (os pontos de descoberta) foi praticamente instantânea, validando nossa estratégia e desbloqueando o processo.&lt;/p&gt;
+&lt;h4 id="impacto-e-próximos-passos"&gt;Impacto e Próximos Passos
+&lt;/h4&gt;&lt;p&gt;Essa descoberta não apenas resolveu nosso problema interno, mas também revelou uma falha crítica de documentação que poderia afetar inúmeros outros engenheiros. Como próximos passos, meu objetivo é duplo:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Contribuir com a comunidade:&lt;/strong&gt; Aprimorar os logs do plugin de &lt;em&gt;discovery&lt;/em&gt; do Azure para que erros como este sejam mais claros e fáceis de diagnosticar.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Documentar a limitação:&lt;/strong&gt; Tornar pública a informação sobre o limite do &lt;code&gt;skip&lt;/code&gt; e &lt;code&gt;take&lt;/code&gt; para que outros usuários da ferramenta não percam tempo investigando o mesmo problema.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;Essa experiência reforçou uma lição fundamental: às vezes, para resolver um problema complexo, é preciso ir além da documentação e mergulhar no código-fonte.&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id="diário-de-bordo-de-um-tech-lead"&gt;Diário de Bordo de um Tech Lead
+&lt;/h2&gt;&lt;h3 id="como-superamos-a-incerteza-e-entregamos-o-projeto-crítico"&gt;Como superamos a incerteza e entregamos o projeto crítico.
+&lt;/h3&gt;&lt;p&gt;Minha jornada no Hapvida começou com um batismo de fogo: o projeto HomeCare. Em julho de 2025, nosso time de Engenharia recebeu a missão de entregar, em 45 dias, uma aplicação complexa que estava em espera há mais de seis meses. Este post é um diário de bordo dessa experiência, detalhando os desafios, as soluções e, mais importante, os aprendizados que tirei ao assumir uma liderança técnica em um cenário de alta pressão.&lt;/p&gt;
+&lt;h4 id="o-ponto-de-partida-planejamento-e-estimativa"&gt;O Ponto de Partida: Planejamento e Estimativa
+&lt;/h4&gt;&lt;p&gt;O primeiro passo foi entender o tamanho do monstro. Dedicamos quatro dias inteiros a uma &lt;em&gt;Planning&lt;/em&gt;, quebrando a especificação funcional em &lt;em&gt;Features&lt;/em&gt; e estimando cada tarefa. Foi um processo intenso de imersão que nos deu o prazo final: 45 dias. A partir daí, organizei nosso &lt;em&gt;board&lt;/em&gt; em Épicos e Histórias, assumindo a responsabilidade não só de codificar, mas de orquestrar o time de desenvolvimento e ser a ponte com a equipe de QA.&lt;/p&gt;
+&lt;h4 id="sprint-1-a-prova-de-fogo-e-a-primeira-vitória"&gt;Sprint 1: A Prova de Fogo e a Primeira Vitória
+&lt;/h4&gt;&lt;p&gt;Logo na primeira &lt;em&gt;sprint&lt;/em&gt;, a realidade se impôs. Encontramos divergências claras entre a documentação e as informações que recebíamos. Cada dia parecia trazer uma nova mudança de escopo. Apesar disso, o time se manteve focado. Entregar aquela primeira parte e enviá-la para homologação foi crucial. Não era apenas código; era uma injeção de confiança de que, apesar dos problemas, éramos capazes.&lt;/p&gt;
+&lt;h4 id="sprint-2-o-caos-organizado"&gt;Sprint 2: O Caos Organizado
+&lt;/h4&gt;&lt;p&gt;A segunda &lt;em&gt;sprint&lt;/em&gt; foi, sem dúvida, o clímax da nossa saga. Estávamos lidando com o fluxo mais complexo da aplicação, envolvendo consultas pesadas em um banco de dados Oracle e requisitos que surgiam no meio do caminho. O golpe veio no último dia: descobrimos que um fluxo central estava funcionalmente errado, invalidando metade do nosso trabalho. A sensação foi de um soco no estômago. Tivemos que, em uma corrida contra o tempo, refazer tudo em apenas dois dias. Foi aqui que a resiliência e a sinergia do time foram postas à prova.&lt;/p&gt;
+&lt;h4 id="sprint-3-a-reta-final"&gt;Sprint 3: A Reta Final
+&lt;/h4&gt;&lt;p&gt;Na última &lt;em&gt;sprint&lt;/em&gt;, o caminho estava mais claro. Os incêndios das semanas anteriores nos fortaleceram e nos deram mais contexto sobre o projeto. Ainda que algumas inconsistências de informação persistissem, conseguíamos contorná-las com mais agilidade. Após muitas reuniões, trabalho focado e algumas horas extras inevitáveis, a linha de chegada apareceu. Entregamos o projeto.&lt;/p&gt;
+&lt;h4 id="lições-aprendidas-na-trincheira"&gt;Lições Aprendidas na Trincheira
+&lt;/h4&gt;&lt;p&gt;Essa experiência foi uma aceleração de carreira compactada em 45 dias. Saí dela com uma visão muito mais clara sobre o papel de uma liderança técnica e sobre gestão de projetos em ambientes de alta incerteza. Meus principais aprendizados foram:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;O Conhecimento é Cumulativo:&lt;/strong&gt; O time ao final do projeto não é o mesmo do início. Se tivéssemos o conhecimento do último dia no primeiro, teríamos sido ainda mais rápidos.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Estimativa sem Margem de Erro é Ilusão:&lt;/strong&gt; Nenhuma tarefa é &amp;ldquo;simples&amp;rdquo;. Subestimar a complexidade é o caminho mais curto para atrasos. Sempre considere uma margem para o inesperado.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;O Tech Lead é um Facilitador:&lt;/strong&gt; Meu papel mais importante não foi escrever o código mais brilhante, mas sim garantir que cada desenvolvedor tivesse o que precisava para fazer o seu melhor. Resolver um problema de acesso, por exemplo, era tão prioritário quanto corrigir um bug crítico.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;A Liderança Inspira pelo Exemplo:&lt;/strong&gt; Em momentos de crise, a equipe olha para o líder. Transmitir calma e confiança de que o objetivo é alcançável é fundamental para manter a moral e o desempenho do time elevados.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="agradecimentos-e-trabalho-em-equipe"&gt;Agradecimentos e Trabalho em Equipe
+&lt;/h3&gt;&lt;p&gt;Tive de trabalhar ao lado de pessoas que são referencia e nos apoiaram nessa entrega.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a class="link" href="https://www.linkedin.com/in/matheus-ulisses" target="_blank" rel="noopener"
+&gt;Matheus Ulisses&lt;/a&gt; (Gerente do time de Engenharia de Software)&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a class="link" href="" &gt;Guilherme Ferreira&lt;/a&gt; (Especialista em Engenharia de Software para React Mobile)&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a class="link" href="" &gt;Leonardo Oliveira&lt;/a&gt; (Especialista em Engenharia de Software para .NET)&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a class="link" href="" &gt;Daniel Alvez Paezani&lt;/a&gt; (Especialista em Engenharia de Software para Java)&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a class="link" href="https://www.linkedin.com/in/ricardo-takahiro-tanaka" target="_blank" rel="noopener"
+&gt;Ricardo Tanaka&lt;/a&gt; (Especialista em Engenharia de Software para Java)&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;&lt;a class="link" href="https://www.linkedin.com/in/thalyaoliveira25" target="_blank" rel="noopener"
+&gt;Thalya Oliveira&lt;/a&gt; (Desenvolvedora .NET)&lt;/strong&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;O projeto foi muito mais do que uma entrega no Hapvida. Foi a prova de que com um time com habilidades, experiência, maturidade, comunicação e muita resiliência, até os prazos mais impossíveis podem ser cumpridos.&lt;/p&gt;</description></item><item><title>O Grande Divisor de Águas da Minha Carreira: Minha História na 5by5</title><link>https://raphanogueira.dev/p/5by5/</link><pubDate>Thu, 14 Nov 2019 12:00:00 +0000</pubDate><guid>https://raphanogueira.dev/p/5by5/</guid><description>&lt;img src="https://raphanogueira.dev/p/5by5/capa.png" alt="Featured image of post O Grande Divisor de Águas da Minha Carreira: Minha História na 5by5" /&gt;&lt;h1 id="minha-jornada-na-5by5-de-júnior-a-especialista"&gt;Minha Jornada na 5by5: De Júnior a Especialista
+&lt;/h1&gt;&lt;p&gt;Para muitos, uma mudança de emprego pode parecer algo simples. Para mim, foi um mergulho no desconhecido. Eu estava no meu primeiro emprego, mas me sentia descontente e estagnado por atuar fora da área que realmente gostava. Foi então que conheci a 5by5. Já havia tentado uma vaga antes sem sucesso, mas na segunda tentativa, deu certo.&lt;/p&gt;
+&lt;p&gt;O desafio? A proposta exigia que eu desse alguns passos para trás na minha carreira. Muitos talvez não estivessem dispostos a reduzir o salário em troca de conhecimento, mas acredito que não ter me acomodado naquele momento foi o que fez toda a diferença na minha vida.&lt;/p&gt;
+&lt;h2 id="o-início-da-jornada-desafios-e-aprendizados"&gt;O Início da Jornada: Desafios e Aprendizados
+&lt;/h2&gt;&lt;p&gt;Fui contratado como Desenvolvedor Júnior, uma escolha que se provou acertada. Grande parte das tecnologias com as quais eu trabalharia era nova para mim: &lt;code&gt;MongoDb&lt;/code&gt;, &lt;code&gt;Redis&lt;/code&gt;, &lt;code&gt;Microserviços&lt;/code&gt;, &lt;code&gt;CQRS&lt;/code&gt;, &lt;code&gt;Programação Assíncrona&lt;/code&gt;, &lt;code&gt;Desenvolvimento Cloud&lt;/code&gt;, &lt;code&gt;Kubernetes&lt;/code&gt;, &lt;code&gt;Docker&lt;/code&gt;, &lt;code&gt;CI/CD&lt;/code&gt;, &lt;code&gt;Mensageria&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Minha jornada na 5by5 começou oficialmente em &lt;strong&gt;18 de novembro de 2019&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Fui alocado em um projeto chamado SICES, voltado para a venda de sistemas de energia solar. Foi ali que encontrei grandes mentores que foram fundamentais para o meu desenvolvimento. Deixo um agradecimento especial ao &lt;strong&gt;&lt;a class="link" href="https://www.linkedin.com/in/celso-b-silva-jr-689731bb/" target="_blank" rel="noopener"
+&gt;Celso Batista&lt;/a&gt;&lt;/strong&gt;, &lt;strong&gt;&lt;a class="link" href="https://www.linkedin.com/in/elcio-silva-1960339a/" target="_blank" rel="noopener"
+&gt;Elcio Silva&lt;/a&gt;&lt;/strong&gt;, &lt;strong&gt;&lt;a class="link" href="https://www.linkedin.com/in/jcmdsbr/" target="_blank" rel="noopener"
+&gt;Jean Carlos&lt;/a&gt;&lt;/strong&gt;, &lt;strong&gt;&lt;a class="link" href="https://www.linkedin.com/in/thiago-vanzelli-de-mendon%C3%A7a-b862a885/" target="_blank" rel="noopener"
+&gt;Thiago Mendonça (Jesus)&lt;/a&gt;&lt;/strong&gt; e &lt;strong&gt;&lt;a class="link" href="https://www.linkedin.com/in/romildo-benicio-da-cruz-junior-700a9527/" target="_blank" rel="noopener"
+&gt;Romildo Cruz&lt;/a&gt;&lt;/strong&gt;, que confiaram no meu trabalho desde o primeiro dia e me deram todo o apoio necessário.&lt;/p&gt;
+&lt;p&gt;Neste projeto, não só aprendi todas as tecnologias que mencionei, como também tive uma ascensão rápida de Júnior para Pleno. Tive pouco tempo no modelo presencial, pois a pandemia nos levou para o home office logo em seguida.&lt;/p&gt;
+&lt;h2 id="crescimento-e-evolução-de-júnior-a-sênior"&gt;Crescimento e Evolução: De Júnior a Sênior
+&lt;/h2&gt;&lt;p&gt;No início, minhas tarefas se concentravam na correção de bugs. Com o tempo, passei a ser responsável pelas integrações entre o backend e o frontend. Na fase final do projeto, fiquei encarregado da sustentação, onde o foco era melhorar a performance e a qualidade do código existente, otimizar consultas no Mongo e aplicar cache em pontos estratégicos. Foi um período de grande aprendizado sobre &lt;code&gt;Design Patterns&lt;/code&gt; e sua importância.&lt;/p&gt;
+&lt;p&gt;Nessa época, comecei a me aventurar em Kubernetes. Com acesso aos pods, aprendi a obter logs, a investigar problemas em ambientes cloud e a atuar em incidentes. Foi ao entrar para o time de sustentação que minha carreira ganhou um norte claro e meus conhecimentos se tornaram mais sólidos.&lt;/p&gt;
+&lt;p&gt;Durante esse período, também participei de um projeto pontual para o RH da Azul, que consistia em uma integração com a Gupy. Em uma equipe de três pessoas liderada pelo &lt;strong&gt;&lt;a class="link" href="https://www.linkedin.com/in/romildo-benicio-da-cruz-junior-700a9527/" target="_blank" rel="noopener"
+&gt;Romildo Cruz&lt;/a&gt;&lt;/strong&gt; e com o &lt;strong&gt;&lt;a class="link" href="https://www.linkedin.com/in/celso-b-silva-jr-689731bb/" target="_blank" rel="noopener"
+&gt;Celso Batista&lt;/a&gt;&lt;/strong&gt; como meu par, amadureci muito através das trocas de ideias.&lt;/p&gt;
+&lt;p&gt;De volta à sustentação da SICES, o time foi reestruturado e o &lt;strong&gt;&lt;a class="link" href="https://www.linkedin.com/in/celso-b-silva-jr-689731bb/" target="_blank" rel="noopener"
+&gt;Celso Batista&lt;/a&gt;&lt;/strong&gt; retornou como nosso Tech Lead. Essa fase foi marcada por debates produtivos sobre novas features, onde minha maturidade técnica e meu conhecimento de negócio por estar no projeto desde o início foram cruciais para mitigar problemas antes mesmo do desenvolvimento.&lt;/p&gt;
+&lt;p&gt;Tudo isso, em um período de 2019 a 2022, culminou em uma ascensão profissional rápida, passando pelos níveis de Júnior, Pleno e Sênior.&lt;/p&gt;
+&lt;h2 id="a-nova-fase-hapvida-e-a-especialização"&gt;A Nova Fase: Hapvida e a Especialização
+&lt;/h2&gt;&lt;p&gt;Após um breve intervalo de três meses fora da 5by5, retornei para a eterna &amp;ldquo;sala 401&amp;rdquo;, mas desta vez em um projeto que mudaria minha carreira de vez: o Hapvida. Tive a sorte de trabalhar novamente com a mesma equipe de feras: &lt;strong&gt;&lt;a class="link" href="https://www.linkedin.com/in/romildo-benicio-da-cruz-junior-700a9527/" target="_blank" rel="noopener"
+&gt;Romildo Cruz&lt;/a&gt;&lt;/strong&gt; como líder, &lt;strong&gt;&lt;a class="link" href="https://www.linkedin.com/in/celso-b-silva-jr-689731bb/" target="_blank" rel="noopener"
+&gt;Celso Batista&lt;/a&gt;&lt;/strong&gt; e &lt;strong&gt;&lt;a class="link" href="https://www.linkedin.com/in/elcio-silva-1960339a/" target="_blank" rel="noopener"
+&gt;Elcio Silva&lt;/a&gt;&lt;/strong&gt; como pares, e &lt;strong&gt;&lt;a class="link" href="https://www.linkedin.com/in/jcmdsbr/" target="_blank" rel="noopener"
+&gt;Jean Carlos&lt;/a&gt;&lt;/strong&gt; como nosso arquiteto.&lt;/p&gt;
+&lt;p&gt;Ali, desenvolvi novas habilidades, trabalhando com &lt;code&gt;.NET 6&lt;/code&gt;, &lt;code&gt;CosmosDB&lt;/code&gt; (API do Mongo no Azure) e aprofundando meus conhecimentos em Cache, REST, &lt;code&gt;Design Patterns&lt;/code&gt; e metodologias ágeis em ambiente cloud.&lt;/p&gt;
+&lt;p&gt;Após quase dois anos atuando como desenvolvedor neste projeto B2B, recebi a oportunidade de me juntar ao time de Especialistas em Engenharia de Software no Hapvida, focado na área de .NET. Nesse cargo, pude realizar contribuições significativas para a companhia, como:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Code Review:&lt;/strong&gt; Garantia de qualidade, performance e legibilidade do código em diversos projetos.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Provas de Conceito (POCs):&lt;/strong&gt; Criação de guias para orientar desenvolvedores em temas como:
+&lt;ul&gt;
+&lt;li&gt;FeatureFlags&lt;/li&gt;
+&lt;li&gt;Conexão com múltiplos bancos de dados (Oracle, SQL Server)&lt;/li&gt;
+&lt;li&gt;CDC (Change Data Capture) com Azure Functions e Kafka&lt;/li&gt;
+&lt;li&gt;Geração de PDFs a partir de código HTML&lt;/li&gt;
+&lt;li&gt;Uso avançado de Redis&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;SemaphoreSlim&lt;/code&gt; para processamento em lote e gerenciamento de threads&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Implementação do SonarQube:&lt;/strong&gt; Migrei a análise do Sonar de &lt;code&gt;Dockerfiles&lt;/code&gt; para a pipeline do Azure, com quality gates no processo de build e release, além de integração com Pull Requests para comentários automáticos.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Implementação do Backstage:&lt;/strong&gt; Adotamos um IDP (Internal Developer Platform) para mapear todos os projetos (incluindo legados), padronizar templates para criação rápida e assertiva de novos serviços, e integrar com o Azure para telemetria de uso e métricas de desenvolvimento.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="compartilhando-conhecimento"&gt;Compartilhando Conhecimento
+&lt;/h2&gt;&lt;p&gt;Durante esses anos, também tive a oportunidade de ministrar palestras e treinamentos internos na 5by5:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;SonarQube:&lt;/strong&gt; Apresentei os ganhos da ferramenta e demonstrei como implementá-la de forma prática e assertiva na esteira de desenvolvimento.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;ConectCon:&lt;/strong&gt; Apresentei o conceito de &amp;ldquo;Golden Path&amp;rdquo; utilizando Backstage, mostrando como era possível refletir alterações de &lt;code&gt;NetworkPolicies&lt;/code&gt; em Kubernetes através de uma simples mudança no catálogo do backstage.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id="fim-de-um-ciclo-e-gratidão"&gt;Fim de um Ciclo e Gratidão
+&lt;/h2&gt;&lt;p&gt;Meu ciclo na 5by5 se encerrou em junho de 2025, quando recebi uma proposta de internalização do próprio Hapvida. Sou eternamente grato a todos que contribuíram com a minha carreira. Deixo aqui um agradecimento especial também ao &lt;strong&gt;&lt;a class="link" href="https://www.linkedin.com/in/rodrigocesarcarvalho/" target="_blank" rel="noopener"
+&gt;Rodrigo Carvalho&lt;/a&gt;&lt;/strong&gt;, com quem tive uma proximidade maior após entrar para o time de Especialistas.&lt;/p&gt;
+&lt;p&gt;A 5by5 foi a base que impulsionou minha trajetória, e levarei os aprendizados e as amizades para sempre.&lt;/p&gt;</description></item><item><title>Cast: Onde Minha Carreira em Tecnologia Começou</title><link>https://raphanogueira.dev/p/cast/</link><pubDate>Tue, 04 Apr 2017 09:00:00 +0000</pubDate><guid>https://raphanogueira.dev/p/cast/</guid><description>&lt;img src="https://raphanogueira.dev/p/cast/capa.jpg" alt="Featured image of post Cast: Onde Minha Carreira em Tecnologia Começou" /&gt;&lt;p&gt;Para muitos, o primeiro emprego é um marco inesquecível. Para mim, a Cast foi isso e muito mais: foi a porta de entrada para o universo da tecnologia e a base fundamental de toda a minha carreira.&lt;/p&gt;
+&lt;p&gt;Tudo começou em 4 de abril de 2017, quando fui selecionado para um treinamento intensivo de três meses em &lt;strong&gt;.NET&lt;/strong&gt;. Ali, dei meus primeiros passos, aprendendo os fundamentos que me preparariam para os desafios reais do mercado. Ao final desse período, a grande notícia: fui contratado como estagiário.&lt;/p&gt;
+&lt;p&gt;Neste post, quero compartilhar como essa primeira oportunidade se transformou em uma jornada incrível de evolução profissional.&lt;/p&gt;
+&lt;h3 id="os-primeiros-passos-o-treinamento-e-o-estágio"&gt;Os Primeiros Passos: O Treinamento e o Estágio
+&lt;/h3&gt;&lt;p&gt;Como estagiário, fui integrado a um time com excelentes mentores, entre eles &lt;strong&gt;Julio César&lt;/strong&gt; e &lt;strong&gt;Fabio Y. Frushio&lt;/strong&gt;, que me apoiaram muito nessa chegada e durante toda a minha jornada na Cast. Minhas primeiras responsabilidades foram cruciais para meu desenvolvimento:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Auxiliar no desenvolvimento de novas telas para o sistema COSIP em ASP.NET, utilizando MVC, WCF e NHibernate.&lt;/li&gt;
+&lt;li&gt;Resolver problemas complexos de performance e acesso a dados utilizando NHibernate.&lt;/li&gt;
+&lt;li&gt;Realizar correções e melhorias em código legado.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Foi um período de imersão total. Cada tarefa era uma aula e cada bug corrigido, uma pequena vitória.&lt;/p&gt;
+&lt;h3 id="a-primeira-conquista-programador-júnior-e-seus-desafios"&gt;A Primeira Conquista: Programador Júnior e seus desafios
+&lt;/h3&gt;&lt;p&gt;Após um ano de dedicação e muito aprendizado, tive a alegria de ser um dos selecionados para a efetivação como &lt;strong&gt;Programador Júnior&lt;/strong&gt;. Esse foi um momento de grande orgulho e a confirmação de que eu estava no caminho certo.&lt;/p&gt;
+&lt;p&gt;Com a nova posição, vieram maiores responsabilidades. Meu primeiro grande desafio como júnior foi assumir um sistema chamado &lt;strong&gt;Simples Nacional&lt;/strong&gt;, um projeto responsável por validar malhas fiscais e gerar relatórios. Foi nesse período que solidifiquei minha base na resolução de problemas complexos e em minha lógica de programação, seja para entender, depurar ou corrigir bugs em código legado. Hoje em dia, acredito que esse projeto me ajudou muito na forma como identifico problemas em código e a como lidar com a pressão de projetos complexos.&lt;/p&gt;
+&lt;h3 id="além-do-júnior-os-desafios-e-responsabilidades-do-desenvolvedor-pleno"&gt;Além do Júnior: Os desafios e responsabilidades do Desenvolvedor Pleno
+&lt;/h3&gt;&lt;p&gt;A evolução continuou e, após mais um ano de entregas consistentes e busca por novos conhecimentos, fui promovido a &lt;strong&gt;Desenvolvedor Pleno&lt;/strong&gt;. Essa transição marcou minha passagem de um profissional que executava tarefas para um que propunha soluções, com mais autonomia e responsabilidade sobre projetos críticos.&lt;/p&gt;
+&lt;p&gt;Foi como Pleno que tive a chance de liderar tecnicamente uma das iniciativas mais gratificantes da minha carreira na empresa:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Projeto INVEPAR:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;O Desafio:&lt;/strong&gt; Não havia mais vagas para desenvolvedor .NET neste projeto, então me aventurei em Angular 7, algo totalmente diferente para mim. Além de ser um contexto totalmente novo, era um projeto de uma concessionária de rodovias. Tive esse desafio de aprender uma nova linguagem logo após a promoção.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Minha Contribuição:&lt;/strong&gt; Fui responsável por desenvolver telas e realizar grande parte das integrações entre o frontend e o backend, por ter um bom conhecimento na segunda área.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;O Resultado:&lt;/strong&gt; Consegui obter conhecimento referente ao frontend que, posteriormente, me ajudou muito em diversas atividades, inclusive com o que trabalho hoje. Além disso, fui o único desenvolvedor frontend em um projeto interno que viria na sequência.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Projeto Interno:&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;O Desafio:&lt;/strong&gt; Assumir a liderança do frontend em um projeto interno.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Minha Contribuição:&lt;/strong&gt; Construir o projeto em todas as suas camadas de front-end, desde o login até camadas complexas de telemetria, entre outras telas.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;O Resultado:&lt;/strong&gt; Consegui construir um conhecimento sólido em frontend baseado em Angular 7, além de melhorar minha lógica e facilidade para aprender novas linguagens. Acredito que me desenvolvi muito bem tecnicamente, melhorei bastante a minha comunicação e consegui auxiliar os outros desenvolvedores backend.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="lições-que-moldaram-minha-carreira"&gt;Lições Que Moldaram Minha Carreira
+&lt;/h3&gt;&lt;p&gt;Olhando para trás, a experiência na Cast foi uma verdadeira escola. Os principais aprendizados que levo comigo são:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Técnicos:&lt;/strong&gt; Construí uma base sólida em .NET e a expandi para Angular 7, desenvolvendo a capacidade de auxiliar membros do meu time. A prática constante me tornou proficiente em resolver problemas técnicos complexos e aprimorou minha lógica de programação.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Metodologias:&lt;/strong&gt; Vivenciei a aplicação de metodologias ágeis como Scrum e Kanban em projetos reais, entendendo a importância da comunicação e da entrega contínua de valor.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Habilidades Interpersonais:&lt;/strong&gt; Aprendi a trabalhar em equipe, a receber e dar feedbacks construtivos e a comunicar ideias técnicas de forma clara para diferentes públicos.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id="conclusão"&gt;Conclusão
+&lt;/h3&gt;&lt;p&gt;Minha trajetória na Cast foi muito mais do que uma linha no currículo; foi a jornada que me transformou de um iniciante entusiasmado em um desenvolvedor confiante e com experiência nas duas frentes de desenvolvimento.&lt;/p&gt;
+&lt;p&gt;Sou imensamente grato à Cast por ter me dado a primeira oportunidade, mesmo sem ter conhecimentos sólidos na minha entrada, pelos desafios que me tiraram da zona de conforto e, acima de tudo, pelos líderes e colegas que me mentoraram e acreditaram no meu potencial. Essa experiência não foi apenas uma base, foi o alicerce que me preparou para todos os próximos passos da minha carreira.&lt;/p&gt;</description></item></channel></rss>

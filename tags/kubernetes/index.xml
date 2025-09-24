@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Kubernetes on Raphael Nogueira</title><link>https://raphanogueira.dev/tags/kubernetes/</link><description>Recent content in Kubernetes on Raphael Nogueira</description><generator>Hugo -- gohugo.io</generator><language>pt-br</language><lastBuildDate>Sat, 23 Aug 2025 09:00:00 +0000</lastBuildDate><atom:link href="https://raphanogueira.dev/tags/kubernetes/index.xml" rel="self" type="application/rss+xml"/><item><title>Do Zero ao Deploy em Minutos: Minha Palestra sobre Golden Paths no Meetup Cloud Native Araraquara</title><link>https://raphanogueira.dev/p/palestra-kcd-araraquara/</link><pubDate>Sat, 19 Apr 2025 09:00:00 +0000</pubDate><guid>https://raphanogueira.dev/p/palestra-kcd-araraquara/</guid><description>&lt;img src="https://raphanogueira.dev/p/palestra-kcd-araraquara/capa.jpeg" alt="Featured image of post Do Zero ao Deploy em Minutos: Minha Palestra sobre Golden Paths no Meetup Cloud Native Araraquara" /&gt;&lt;p&gt;Como podemos capacitar nossos times de desenvolvimento para que entreguem valor com mais velocidade e segurança? Essa foi a pergunta central da minha palestra no &lt;strong&gt;2º Meetup da &lt;a class="link" href="https://www.linkedin.com/company/cncfararaquara" target="_blank" rel="noopener"
+&gt;Cloud Native Araraquara-SP&lt;/a&gt;&lt;/strong&gt;, que aconteceu no último dia 19 de abril.&lt;/p&gt;
+&lt;p&gt;Foi uma honra imensa aceitar o convite do &lt;a class="link" href="https://www.linkedin.com/in/matheus-ulisses" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;Matheus Ulisses&lt;/strong&gt;&lt;/a&gt; para compartilhar minha experiência com a comunidade. Durante o evento, demonstrei como a adoção de um &lt;strong&gt;Golden Path com a plataforma &lt;a class="link" href="https://backstage.io/" target="_blank" rel="noopener"
+&gt;Backstage.io&lt;/a&gt;&lt;/strong&gt; tem sido um divisor de águas para otimizar a jornada de engenharia.&lt;/p&gt;
+&lt;p&gt;Abordei como essa estratégia resolve desafios críticos, permitindo:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Acelerar o Time-to-Market:&lt;/strong&gt; Reduzir o tempo de setup de novos serviços de dias para minutos, automatizando a criação de toda a infraestrutura e pipeline de CI/CD necessários.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Fortalecer a Governança:&lt;/strong&gt; Incorporar as melhores práticas de segurança, qualidade e conformidade desde a primeira linha de código, de forma padronizada para toda a organização.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Potencializar a Inovação:&lt;/strong&gt; Melhorar drasticamente a Developer Experience (DevX), abstraindo complexidades e permitindo que os desenvolvedores foquem na lógica de negócio e na criação de soluções de impacto.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Agradeço a todos que participaram e contribuíram com perguntas excelentes. Quero deixar um agradecimento muito especial à minha noiva, &lt;a class="link" href="" &gt;Gabrielle Limoni&lt;/a&gt;, por ser meu grande apoio de sempre. A energia da comunidade de Araraquara é contagiante! Parabenizo também os organizadores por um evento de altíssimo nível.&lt;/p&gt;
+&lt;p&gt;E na sua empresa, como vocês lidam com a padronização e o onboarding de novos projetos? Vamos conversar nos comentários!&lt;/p&gt;
+&lt;h2 id="evento"&gt;Evento
+&lt;/h2&gt;&lt;p&gt;&lt;img src="https://raphanogueira.dev/p/palestra-kcd-araraquara/KCD-Araraquara-01.jpeg"
+width="960"
+height="1280"
+srcset="https://raphanogueira.dev/p/palestra-kcd-araraquara/KCD-Araraquara-01_hu_de51c5f7307e0bae.jpeg 480w, https://raphanogueira.dev/p/palestra-kcd-araraquara/KCD-Araraquara-01_hu_fde15b61b82b96ef.jpeg 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="75"
+data-flex-basis="180px"
+&gt;
+&lt;img src="https://raphanogueira.dev/p/palestra-kcd-araraquara/KCD-Araraquara-02.jpeg"
+width="960"
+height="1280"
+srcset="https://raphanogueira.dev/p/palestra-kcd-araraquara/KCD-Araraquara-02_hu_93b877c0f0ce9f28.jpeg 480w, https://raphanogueira.dev/p/palestra-kcd-araraquara/KCD-Araraquara-02_hu_ef2bbb1db3e23761.jpeg 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="75"
+data-flex-basis="180px"
+&gt;
+&lt;img src="https://raphanogueira.dev/p/palestra-kcd-araraquara/KCD-Araraquara-03.jpeg"
+width="780"
+height="1040"
+srcset="https://raphanogueira.dev/p/palestra-kcd-araraquara/KCD-Araraquara-03_hu_fc78609d5e12a74.jpeg 480w, https://raphanogueira.dev/p/palestra-kcd-araraquara/KCD-Araraquara-03_hu_f46c2ce255c352eb.jpeg 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="75"
+data-flex-basis="180px"
+&gt;
+&lt;img src="https://raphanogueira.dev/p/palestra-kcd-araraquara/KCD-Araraquara-04.jpeg"
+width="1040"
+height="780"
+srcset="https://raphanogueira.dev/p/palestra-kcd-araraquara/KCD-Araraquara-04_hu_c768e4ba7a94916c.jpeg 480w, https://raphanogueira.dev/p/palestra-kcd-araraquara/KCD-Araraquara-04_hu_281157b4e19bf828.jpeg 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="133"
+data-flex-basis="320px"
+&gt;
+&lt;img src="https://raphanogueira.dev/p/palestra-kcd-araraquara/KCD-Araraquara-05.jpeg"
+width="960"
+height="1280"
+srcset="https://raphanogueira.dev/p/palestra-kcd-araraquara/KCD-Araraquara-05_hu_3fb87030c127f0c1.jpeg 480w, https://raphanogueira.dev/p/palestra-kcd-araraquara/KCD-Araraquara-05_hu_f6e1b26285c625b.jpeg 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="75"
+data-flex-basis="180px"
+&gt;&lt;/p&gt;</description></item><item><title>CBA</title><link>https://raphanogueira.dev/p/cba/</link><pubDate>Sat, 23 Aug 2025 09:00:00 +0000</pubDate><guid>https://raphanogueira.dev/p/cba/</guid><description>&lt;img src="https://raphanogueira.dev/p/cba/capa.png" alt="Featured image of post CBA" /&gt;&lt;p&gt;Minha jornada com o Backstage.io começou há cerca de um ano, quando iniciei o desafio de implementá-lo no ambiente corporativo. Desde o início, me identifiquei com o potencial da plataforma e tenho focado em aprender mais sobre ela a cada dia.&lt;/p&gt;
+&lt;p&gt;Ao longo desses meses, mergulhei na prática, implementando o descobrimento automático de entidades para o Software Catalog, desenvolvendo Software Templates customizados e desenvolvendo um plugin de &lt;strong&gt;&lt;a class="link" href="https://github.com/raphanogueira/backstage-plugins/tree/master/plugins/analytics-internal" target="_blank" rel="noopener"
+&gt;telemetria interna&lt;/a&gt;&lt;/strong&gt; para o backstage seguindo ótimas referências da comunidade Cloud Native.&lt;/p&gt;
+&lt;p&gt;Com essa base prática sólida, decidi buscar a certificação &lt;strong&gt;&lt;a class="link" href="https://www.credly.com/badges/192f4a89-8713-4665-9b6e-9f6ba4b1ee63/linked_in?t=t1gvbj" target="_blank" rel="noopener"
+&gt;Certified Backstage Associate (CBA)&lt;/a&gt;&lt;/strong&gt; para formalizar meu conhecimento. Minha preparação final foi uma imersão focada: uma semana intensa de simulados para dominar o formato da prova, consolidando a experiência que adquiri no dia a dia.&lt;/p&gt;
+&lt;p&gt;O resultado foi a aprovação! Fico à disposição para trocar ideias e ajudar quem também está nessa jornada. Se tiver qualquer dúvida, pode me chamar!&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://raphanogueira.dev/p/cba/cba.png"
+width="1001"
+height="1001"
+srcset="https://raphanogueira.dev/p/cba/cba_hu_faa3f3c86b36a10c.png 480w, https://raphanogueira.dev/p/cba/cba_hu_1807e0bfa12b28ad.png 1024w"
+loading="lazy"
+alt="CBA - Certified Backstage Associate"
+class="gallery-image"
+data-flex-grow="100"
+data-flex-basis="240px"
+&gt;&lt;/p&gt;</description></item></channel></rss>

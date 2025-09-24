@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Cloud Native on Raphael Nogueira</title><link>https://raphanogueira.dev/tags/cloud-native/</link><description>Recent content in Cloud Native on Raphael Nogueira</description><generator>Hugo -- gohugo.io</generator><language>pt-br</language><lastBuildDate>Sat, 23 Aug 2025 21:00:00 +0000</lastBuildDate><atom:link href="https://raphanogueira.dev/tags/cloud-native/index.xml" rel="self" type="application/rss+xml"/><item><title>Do Zero ao Deploy em Minutos: Minha Palestra sobre Golden Paths no Meetup Cloud Native Araraquara</title><link>https://raphanogueira.dev/p/palestra-kcd-araraquara/</link><pubDate>Sat, 19 Apr 2025 09:00:00 +0000</pubDate><guid>https://raphanogueira.dev/p/palestra-kcd-araraquara/</guid><description>&lt;img src="https://raphanogueira.dev/p/palestra-kcd-araraquara/capa.jpeg" alt="Featured image of post Do Zero ao Deploy em Minutos: Minha Palestra sobre Golden Paths no Meetup Cloud Native Araraquara" /&gt;&lt;p&gt;Como podemos capacitar nossos times de desenvolvimento para que entreguem valor com mais velocidade e segurança? Essa foi a pergunta central da minha palestra no &lt;strong&gt;2º Meetup da &lt;a class="link" href="https://www.linkedin.com/company/cncfararaquara" target="_blank" rel="noopener"
+&gt;Cloud Native Araraquara-SP&lt;/a&gt;&lt;/strong&gt;, que aconteceu no último dia 19 de abril.&lt;/p&gt;
+&lt;p&gt;Foi uma honra imensa aceitar o convite do &lt;a class="link" href="https://www.linkedin.com/in/matheus-ulisses" target="_blank" rel="noopener"
+&gt;&lt;strong&gt;Matheus Ulisses&lt;/strong&gt;&lt;/a&gt; para compartilhar minha experiência com a comunidade. Durante o evento, demonstrei como a adoção de um &lt;strong&gt;Golden Path com a plataforma &lt;a class="link" href="https://backstage.io/" target="_blank" rel="noopener"
+&gt;Backstage.io&lt;/a&gt;&lt;/strong&gt; tem sido um divisor de águas para otimizar a jornada de engenharia.&lt;/p&gt;
+&lt;p&gt;Abordei como essa estratégia resolve desafios críticos, permitindo:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Acelerar o Time-to-Market:&lt;/strong&gt; Reduzir o tempo de setup de novos serviços de dias para minutos, automatizando a criação de toda a infraestrutura e pipeline de CI/CD necessários.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Fortalecer a Governança:&lt;/strong&gt; Incorporar as melhores práticas de segurança, qualidade e conformidade desde a primeira linha de código, de forma padronizada para toda a organização.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Potencializar a Inovação:&lt;/strong&gt; Melhorar drasticamente a Developer Experience (DevX), abstraindo complexidades e permitindo que os desenvolvedores foquem na lógica de negócio e na criação de soluções de impacto.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Agradeço a todos que participaram e contribuíram com perguntas excelentes. Quero deixar um agradecimento muito especial à minha noiva, &lt;a class="link" href="" &gt;Gabrielle Limoni&lt;/a&gt;, por ser meu grande apoio de sempre. A energia da comunidade de Araraquara é contagiante! Parabenizo também os organizadores por um evento de altíssimo nível.&lt;/p&gt;
+&lt;p&gt;E na sua empresa, como vocês lidam com a padronização e o onboarding de novos projetos? Vamos conversar nos comentários!&lt;/p&gt;
+&lt;h2 id="evento"&gt;Evento
+&lt;/h2&gt;&lt;p&gt;&lt;img src="https://raphanogueira.dev/p/palestra-kcd-araraquara/KCD-Araraquara-01.jpeg"
+width="960"
+height="1280"
+srcset="https://raphanogueira.dev/p/palestra-kcd-araraquara/KCD-Araraquara-01_hu_de51c5f7307e0bae.jpeg 480w, https://raphanogueira.dev/p/palestra-kcd-araraquara/KCD-Araraquara-01_hu_fde15b61b82b96ef.jpeg 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="75"
+data-flex-basis="180px"
+&gt;
+&lt;img src="https://raphanogueira.dev/p/palestra-kcd-araraquara/KCD-Araraquara-02.jpeg"
+width="960"
+height="1280"
+srcset="https://raphanogueira.dev/p/palestra-kcd-araraquara/KCD-Araraquara-02_hu_93b877c0f0ce9f28.jpeg 480w, https://raphanogueira.dev/p/palestra-kcd-araraquara/KCD-Araraquara-02_hu_ef2bbb1db3e23761.jpeg 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="75"
+data-flex-basis="180px"
+&gt;
+&lt;img src="https://raphanogueira.dev/p/palestra-kcd-araraquara/KCD-Araraquara-03.jpeg"
+width="780"
+height="1040"
+srcset="https://raphanogueira.dev/p/palestra-kcd-araraquara/KCD-Araraquara-03_hu_fc78609d5e12a74.jpeg 480w, https://raphanogueira.dev/p/palestra-kcd-araraquara/KCD-Araraquara-03_hu_f46c2ce255c352eb.jpeg 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="75"
+data-flex-basis="180px"
+&gt;
+&lt;img src="https://raphanogueira.dev/p/palestra-kcd-araraquara/KCD-Araraquara-04.jpeg"
+width="1040"
+height="780"
+srcset="https://raphanogueira.dev/p/palestra-kcd-araraquara/KCD-Araraquara-04_hu_c768e4ba7a94916c.jpeg 480w, https://raphanogueira.dev/p/palestra-kcd-araraquara/KCD-Araraquara-04_hu_281157b4e19bf828.jpeg 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="133"
+data-flex-basis="320px"
+&gt;
+&lt;img src="https://raphanogueira.dev/p/palestra-kcd-araraquara/KCD-Araraquara-05.jpeg"
+width="960"
+height="1280"
+srcset="https://raphanogueira.dev/p/palestra-kcd-araraquara/KCD-Araraquara-05_hu_3fb87030c127f0c1.jpeg 480w, https://raphanogueira.dev/p/palestra-kcd-araraquara/KCD-Araraquara-05_hu_f6e1b26285c625b.jpeg 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="75"
+data-flex-basis="180px"
+&gt;&lt;/p&gt;</description></item><item><title>Descobrimento De Catálogos Através Do Azure</title><link>https://raphanogueira.dev/p/azure-discovey/</link><pubDate>Sat, 23 Aug 2025 21:00:00 +0000</pubDate><guid>https://raphanogueira.dev/p/azure-discovey/</guid><description>&lt;img src="https://raphanogueira.dev/p/azure-discovey/capa.png" alt="Featured image of post Descobrimento De Catálogos Através Do Azure" /&gt;&lt;h2 id="análise-de-erro-400-na-descoberta-de-catálogo-do-azure-e-proposta-de-melhoria"&gt;Análise de Erro 400 na Descoberta de Catálogo do Azure e Proposta de Melhoria
+&lt;/h2&gt;&lt;h3 id="resumo-do-problema"&gt;Resumo do Problema
+&lt;/h3&gt;&lt;p&gt;Durante a execução do processo de descoberta de entidades (&lt;code&gt;discovery&lt;/code&gt;) para popular o catálogo do Backstage a partir do Azure, foi observado um erro &lt;code&gt;400 Bad Request&lt;/code&gt; genérico. A falta de detalhes na resposta da API tornou a identificação da causa raiz um desafio.&lt;/p&gt;
+&lt;h3 id="análise-e-causa-raiz"&gt;Análise e Causa Raiz
+&lt;/h3&gt;&lt;p&gt;Após uma investigação aprofundada, foi necessário replicar o código do &lt;code&gt;AzureDevOpsDiscoveryProcessor&lt;/code&gt; para adicionar logs detalhados, capturando o cabeçalho (&lt;em&gt;header&lt;/em&gt;) e o corpo (&lt;em&gt;body&lt;/em&gt;) da resposta da API do Azure. Com isso, conseguimos identificar o problema:&lt;/p&gt;
+&lt;p&gt;A API de &lt;strong&gt;Code Search do Azure DevOps&lt;/strong&gt; possui uma limitação que não permite o uso de parâmetros de paginação (&lt;code&gt;$skip&lt;/code&gt; e &lt;code&gt;$take&lt;/code&gt;) em consultas cujo resultado exceda 2.000 itens. Quando essa condição ocorre, a API retorna o erro &lt;code&gt;400 Bad Request&lt;/code&gt; com uma mensagem específica sobre o limite, que não era capturada pelo plugin.&lt;/p&gt;
+&lt;p&gt;Esta limitação não está documentada nas seguintes fontes oficiais:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Documentação da API REST do Azure DevOps:&lt;/strong&gt; &lt;a class="link" href="https://learn.microsoft.com/en-us/rest/api/azure/devops/search/code-search-results/fetch-code-search-results?view=azure-devops-rest-7.1&amp;amp;tabs=HTTP" target="_blank" rel="noopener"
+&gt;Fetch Code Search Results&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Documentação do Plugin:&lt;/strong&gt; &lt;a class="link" href="https://github.com/backstage/backstage/blob/master/plugins/catalog-backend-module-azure/README.md" target="_blank" rel="noopener"
+&gt;Azure Catalog Module&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id="ações-propostas"&gt;Ações Propostas
+&lt;/h3&gt;&lt;p&gt;Com base na análise, tomei a iniciativa de propor as seguintes melhorias na comunidade do Backstage:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Atualizar a documentação do plugin:&lt;/strong&gt; Adicionar uma nota sobre a limitação de 2.000 itens da API do Azure Search para alertar os usuários sobre possíveis falhas em repositórios muito grandes.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Melhorar os Logs de Erro:&lt;/strong&gt; Revisar o código do &lt;em&gt;processor&lt;/em&gt; para garantir que, em caso de falha, o corpo da resposta da API seja incluído no log de erro. Isso fornecerá um feedback mais claro e relevante para quem estiver depurando problemas semelhantes no futuro.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;hr&gt;
+&lt;h3 id="próximos-passos"&gt;Próximos Passos
+&lt;/h3&gt;&lt;p&gt;O plano de ação para implementar esta contribuição está detalhado abaixo e será atualizado conforme o andamento:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;input disabled="" type="checkbox"&gt; &lt;strong&gt;Fork do Projeto:&lt;/strong&gt; Criar um &lt;em&gt;fork&lt;/em&gt; do repositório oficial &lt;code&gt;backstage/backstage&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;input disabled="" type="checkbox"&gt; &lt;strong&gt;Desenvolvimento:&lt;/strong&gt; Aplicar as alterações necessárias na documentação e no código-fonte do plugin &lt;code&gt;catalog-backend-module-azure&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;input disabled="" type="checkbox"&gt; &lt;strong&gt;Pull Request:&lt;/strong&gt; Abrir um Pull Request com as melhorias propostas para revisão da comunidade.&lt;/li&gt;
+&lt;li&gt;&lt;input disabled="" type="checkbox"&gt; &lt;strong&gt;Acompanhamento:&lt;/strong&gt; Monitorar o feedback do PR e realizar os ajustes necessários até que a contribuição seja aceita e integrada (&lt;em&gt;merged&lt;/em&gt;).&lt;/li&gt;
+&lt;/ul&gt;</description></item><item><title>CBA</title><link>https://raphanogueira.dev/p/cba/</link><pubDate>Sat, 23 Aug 2025 09:00:00 +0000</pubDate><guid>https://raphanogueira.dev/p/cba/</guid><description>&lt;img src="https://raphanogueira.dev/p/cba/capa.png" alt="Featured image of post CBA" /&gt;&lt;p&gt;Minha jornada com o Backstage.io começou há cerca de um ano, quando iniciei o desafio de implementá-lo no ambiente corporativo. Desde o início, me identifiquei com o potencial da plataforma e tenho focado em aprender mais sobre ela a cada dia.&lt;/p&gt;
+&lt;p&gt;Ao longo desses meses, mergulhei na prática, implementando o descobrimento automático de entidades para o Software Catalog, desenvolvendo Software Templates customizados e desenvolvendo um plugin de &lt;strong&gt;&lt;a class="link" href="https://github.com/raphanogueira/backstage-plugins/tree/master/plugins/analytics-internal" target="_blank" rel="noopener"
+&gt;telemetria interna&lt;/a&gt;&lt;/strong&gt; para o backstage seguindo ótimas referências da comunidade Cloud Native.&lt;/p&gt;
+&lt;p&gt;Com essa base prática sólida, decidi buscar a certificação &lt;strong&gt;&lt;a class="link" href="https://www.credly.com/badges/192f4a89-8713-4665-9b6e-9f6ba4b1ee63/linked_in?t=t1gvbj" target="_blank" rel="noopener"
+&gt;Certified Backstage Associate (CBA)&lt;/a&gt;&lt;/strong&gt; para formalizar meu conhecimento. Minha preparação final foi uma imersão focada: uma semana intensa de simulados para dominar o formato da prova, consolidando a experiência que adquiri no dia a dia.&lt;/p&gt;
+&lt;p&gt;O resultado foi a aprovação! Fico à disposição para trocar ideias e ajudar quem também está nessa jornada. Se tiver qualquer dúvida, pode me chamar!&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://raphanogueira.dev/p/cba/cba.png"
+width="1001"
+height="1001"
+srcset="https://raphanogueira.dev/p/cba/cba_hu_faa3f3c86b36a10c.png 480w, https://raphanogueira.dev/p/cba/cba_hu_1807e0bfa12b28ad.png 1024w"
+loading="lazy"
+alt="CBA - Certified Backstage Associate"
+class="gallery-image"
+data-flex-grow="100"
+data-flex-basis="240px"
+&gt;&lt;/p&gt;</description></item><item><title>Plugin De Telemetria Interna</title><link>https://raphanogueira.dev/p/plugin-telemetria-internal/</link><pubDate>Sat, 23 Aug 2025 09:00:00 +0000</pubDate><guid>https://raphanogueira.dev/p/plugin-telemetria-internal/</guid><description>&lt;img src="https://raphanogueira.dev/p/plugin-telemetria-internal/capa.png" alt="Featured image of post Plugin De Telemetria Interna" /&gt;&lt;h1 id="plugin-analytics-interno-para-backstage"&gt;Plugin Analytics Interno para Backstage
+&lt;/h1&gt;&lt;p&gt;Após implementarmos o Backstage em nosso ambiente corporativo, sentimos a necessidade de obter métricas de uso: saber se a equipe estava acessando as documentações e quais eram as mais populares. Com isso em mente, criamos este plugin para gerenciar essas informações sem a necessidade de enviar dados para provedores externos.&lt;/p&gt;
+&lt;p&gt;O plugin depende apenas do próprio Backstage, gerando seu frontend, backend e módulos necessários. A única dependência externa é um banco de dados PostgreSQL, que já é um requisito do Backstage desde sua configuração inicial.&lt;/p&gt;
+&lt;p&gt;Abaixo seguem informações de configuração, instalação e exemplos visuais.&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Este é o plugin Analytics Interno para o Backstage.io.&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://raphanogueira.dev/p/plugin-telemetria-internal/screen-example.png"
+width="3410"
+height="1271"
+srcset="https://raphanogueira.dev/p/plugin-telemetria-internal/screen-example_hu_5ba04d44ba4794fd.png 480w, https://raphanogueira.dev/p/plugin-telemetria-internal/screen-example_hu_3aec6e53f79459bd.png 1024w"
+loading="lazy"
+alt="Exemplo do Analytics"
+class="gallery-image"
+data-flex-grow="268"
+data-flex-basis="643px"
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src="https://raphanogueira.dev/p/plugin-telemetria-internal/screen-detail-example.png"
+width="3417"
+height="926"
+srcset="https://raphanogueira.dev/p/plugin-telemetria-internal/screen-detail-example_hu_c67e24c25e68aa27.png 480w, https://raphanogueira.dev/p/plugin-telemetria-internal/screen-detail-example_hu_57b02c79db82b0e1.png 1024w"
+loading="lazy"
+alt="Exemplo de Detalhe do Analytics"
+class="gallery-image"
+data-flex-grow="369"
+data-flex-basis="885px"
+&gt;&lt;/p&gt;
+&lt;p&gt;Este plugin fornece insights sobre a atividade dos usuários dentro da sua instância do Backstage.io, de forma nativa e sem a necessidade de ferramentas de análise externas. Ele também oferece a flexibilidade de encaminhar esses eventos para outras plataformas, se necessário.&lt;/p&gt;
+&lt;p&gt;Você pode obter as seguintes informações:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Visualizações de tela&lt;/li&gt;
+&lt;li&gt;Ações realizadas pelos usuários&lt;/li&gt;
+&lt;li&gt;Contagem de acessos por item&lt;/li&gt;
+&lt;li&gt;Registros de data e hora (timestamps) do primeiro e último acesso&lt;/li&gt;
+&lt;li&gt;Uma visão detalhada para cada item, permitindo identificar quais usuários o acessaram.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h1 id="backend-do-analytics-interno"&gt;Backend do Analytics Interno
+&lt;/h1&gt;&lt;p&gt;Para instruções de instalação e mais detalhes sobre como este pacote funciona, &lt;a class="link" href="https://github.com/raphanogueira/backstage-plugins/blob/master/plugins/analytics-internal/backend/README.md" target="_blank" rel="noopener"
+&gt;consulte o README do backend&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Nota Importante&lt;/strong&gt;: Este pacote opera de forma independente e é desacoplado de outros pacotes de analytics.&lt;/p&gt;
+&lt;h1 id="frontend-do-analytics-interno"&gt;Frontend do Analytics Interno
+&lt;/h1&gt;&lt;p&gt;Para instruções de instalação e mais detalhes sobre como este pacote funciona, &lt;a class="link" href="https://github.com/raphanogueira/backstage-plugins/blob/master/plugins/analytics-internal/frontend/README.md" target="_blank" rel="noopener"
+&gt;consulte o README do frontend&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Nota Importante&lt;/strong&gt;: Este pacote é fortemente acoplado ao pacote &lt;code&gt;plugin-analytics-internal-backend&lt;/code&gt; e depende dele para funcionar.&lt;/p&gt;
+&lt;h1 id="módulo-do-analytics-interno"&gt;Módulo do Analytics Interno
+&lt;/h1&gt;&lt;p&gt;Para instruções de instalação e mais detalhes sobre como este pacote funciona, &lt;a class="link" href="https://github.com/raphanogueira/backstage-plugins/blob/master/plugins/analytics-internal/module/README.md" target="_blank" rel="noopener"
+&gt;consulte o README do módulo&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Nota Importante&lt;/strong&gt;: Este pacote é fortemente acoplado ao &lt;code&gt;plugin-analytics-internal-backend&lt;/code&gt;. Uma configuração incorreta pode levar a erros, pois ele foi projetado para consumir dados do plugin de backend.&lt;/p&gt;</description></item></channel></rss>
