@@ -15,7 +15,7 @@ weight: 1
 
 Bem-vindo ao meu diário de bordo, um espaço onde documento os projetos, desafios e aprendizados mais marcantes da minha carreira como Especialista em Engenharia de Software e as vezes um Engenheiro de Plataforma.
 
-## Diário de Bordo de um Engenharo de Plataforma
+## Diário de Bordo de um Engenheiro de Plataforma
 
 ### Como a importação de 45 mil catálogos para o Backstage revelou um limite não documentado.
 
